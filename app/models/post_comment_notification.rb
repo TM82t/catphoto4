@@ -1,0 +1,2 @@
+class PostCommentNotification < ApplicationRecord
+end

@@ -1,1 +1,26 @@
-top
+<section class="wrapper flex">
+	<div class="sidebar">
+		<h3>ジャンル一覧</h3>
+		<%# @genres.each do |genre| %>
+			<%#= link_to genre.name, items_path(genre_id: genre.id) %>
+		<%# end %>
+	</div>
+	<div class="content">
+		<div class="mv">
+			<p>
+				ようこそ!
+			</p>
+		</div>
+		<h2 class="section-ttl">新着写真</h2>
+		<div class="posts">
+			<%# @items.each do |item| %>
+				<%#= link_to item_path(item) do %>
+					<%#= image_tag item.get_image %>
+					<h5><%#= item.genre.name %></h5>
+					<p><%#= item.name %></p>
+					<p><%#= item.with_tax_price %></p>
+				<%# end %>
+			<%# end %>
+		</div>
+	</div>
+</section>
