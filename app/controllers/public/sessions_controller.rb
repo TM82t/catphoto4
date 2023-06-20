@@ -5,7 +5,7 @@ class Public::SessionsController < Devise::SessionsController
 
   # ゲストログイン用
   def guest_sign_in
-    user = User.guest
+    user = EndUser.guest
     sign_in user
     redirect_to root_path, notice: 'ゲストユーザーとしてログインしました。'
   end
